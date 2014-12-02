@@ -1,7 +1,7 @@
 {
   "name": "upper-case-rearward",
   "main": "./lib/upper-case-rearward",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Convert word to uppercase after you typed it in lowercase",
   "activationCommands": {
     "atom-workspace": "upper-case-rearward:convert"
