@@ -1,0 +1,16 @@
+{
+  "name": "upper-case-rearward",
+  "main": "./lib/upper-case-rearward",
+  "version": "1.0.0",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-workspace": "upper-case-rearward:toggle"
+  },
+  "repository": "https://github.com/atom/upper-case-rearward",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle upper-case-rearward'
+      'command': 'upper-case-rearward:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'upper-case-rearward'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'upper-case-rearward:toggle'
+        }
+      ]
+    ]
+  }
+]
