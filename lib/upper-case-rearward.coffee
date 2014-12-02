@@ -1,13 +1,23 @@
-UpperCaseRearwardView = require './upper-case-rearward-view'
-
 module.exports =
-  upperCaseRearwardView: null
-
   activate: (state) ->
-    @upperCaseRearwardView = new UpperCaseRearwardView(state.upperCaseRearwardViewState)
-
-  deactivate: ->
-    @upperCaseRearwardView.destroy()
-
-  serialize: ->
-    upperCaseRearwardViewState: @upperCaseRearwardView.serialize()
+    atom.commands.add 'atom-text-editor',
+      "upper-case-rearward:convert": ->
+        editor = @getModel()
+        editor.transact ->
+          editor.getCursors().forEach (cursor) ->
+            end = origin = cursor.getBufferPosition()
+            loop
+              # when the cursor reached to the begining of the buffer.
+              break if end.isEqual([0, 0])
+              cursor.moveToPreviousWordBoundary()
+              begin = cursor.getBufferPosition()
+              text = editor.getTextInBufferRange([begin, end])
+              uppercase = text.toUpperCase()
+              unless uppercase is text
+                editor.setTextInBufferRange([begin, end], uppercase)
+                break
+              # try previous word
+              end = begin
+            
+            # restore the cursors
+            cursor.setBufferPosition origin

@@ -2,11 +2,11 @@
   "name": "upper-case-rearward",
   "main": "./lib/upper-case-rearward",
   "version": "1.0.0",
-  "description": "A short description of your package",
+  "description": "Convert word to uppercase after you typed it in lowercase",
   "activationCommands": {
-    "atom-workspace": "upper-case-rearward:toggle"
+    "atom-workspace": "upper-case-rearward:convert"
   },
-  "repository": "https://github.com/atom/upper-case-rearward",
+  "repository": "https://github.com/ozami/upper-case-rearward",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
