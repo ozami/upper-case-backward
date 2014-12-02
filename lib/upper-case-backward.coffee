@@ -1,7 +1,7 @@
 module.exports =
   activate: (state) ->
     atom.commands.add 'atom-text-editor',
-      "upper-case-rearward:convert": ->
+      "upper-case-backward:convert": ->
         editor = @getModel()
         editor.transact ->
           editor.getCursors().forEach (cursor) ->

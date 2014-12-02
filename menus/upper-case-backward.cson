@@ -7,8 +7,8 @@
       'submenu': [
         {type: 'separator'}
         {
-          'label': 'Upper Case Rearward'
-          'command': 'upper-case-rearward:convert'
+          'label': 'Upper Case Backward'
+          'command': 'upper-case-backward:convert'
         }
       ]
     ]

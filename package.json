@@ -1,12 +1,12 @@
 {
-  "name": "upper-case-rearward",
-  "main": "./lib/upper-case-rearward",
+  "name": "upper-case-backward",
+  "main": "./lib/upper-case-backward",
   "version": "0.1.0",
   "description": "Convert word to upper case after you typed it in lower case",
   "activationCommands": {
-    "atom-workspace": "upper-case-rearward:convert"
+    "atom-workspace": "upper-case-backward:convert"
   },
-  "repository": "https://github.com/ozami/upper-case-rearward",
+  "repository": "https://github.com/ozami/upper-case-backward",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
