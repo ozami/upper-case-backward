@@ -7,5 +7,11 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'.editor':
-  'ctrl-alt-u': 'upper-case-backward:convert'
+'.platform-darwin .editor':
+  'cmd-k cmd-c': 'upper-case-backward:convert'
+
+'.platform-win32 .editor':
+  'ctrl-k ctrl-c': 'upper-case-backward:convert'
+
+'.platform-linux .editor':
+  'ctrl-k ctrl-c': 'upper-case-backward:convert'
