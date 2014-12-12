@@ -8,10 +8,10 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 '.platform-darwin .editor':
-  'cmd-k cmd-c': 'upper-case-backward:convert'
+  'cmd-k cmd-u': 'upper-case-backward:convert'
 
 '.platform-win32 .editor':
-  'ctrl-k ctrl-c': 'upper-case-backward:convert'
+  'ctrl-k ctrl-u': 'upper-case-backward:convert'
 
 '.platform-linux .editor':
-  'ctrl-k ctrl-c': 'upper-case-backward:convert'
+  'ctrl-k ctrl-u': 'upper-case-backward:convert'
